@@ -64,7 +64,7 @@ resource "google_compute_instance" "hashicat" {
 
 }
 
-resource "devops" "configure-cat-app" "billable" {
+resource "null_resource" "devops" "configure-cat-app" "billable" {
   depends_on = [
     google_compute_instance.hashicat,
   ]
